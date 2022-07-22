@@ -14,16 +14,10 @@ class MyDrawer extends StatelessWidget {
           children: [
             DrawerHeader(
               padding: EdgeInsets.zero,
-              margin: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
-                accountName: Text(
-                  "Rakesh Nayak",
-                  style: TextStyle(color: Colors.white),
-                ),
-                accountEmail: Text(
-                  "nrakesh608@gmail.com",
-                  style: TextStyle(color: Colors.white),
-                ),
+                margin: EdgeInsets.zero,
+                accountName: Text("RN The Designer"),
+                accountEmail: Text("rnCoder@gmail.com"),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(imageUrl),
                 ),
@@ -37,7 +31,9 @@ class MyDrawer extends StatelessWidget {
               title: Text(
                 "Home",
                 textScaleFactor: 1.2,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                ),
               ),
             ),
             ListTile(
@@ -48,7 +44,9 @@ class MyDrawer extends StatelessWidget {
               title: Text(
                 "Profile",
                 textScaleFactor: 1.2,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                ),
               ),
             ),
             ListTile(
@@ -57,9 +55,11 @@ class MyDrawer extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
-                "Email Me",
+                "Email me",
                 textScaleFactor: 1.2,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: Colors.white,
+                ),
               ),
             )
           ],
